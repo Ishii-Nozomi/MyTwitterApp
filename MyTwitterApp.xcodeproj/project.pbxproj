@@ -16,6 +16,8 @@
 		C895C4B1299FF4D300A75DFE /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C895C4B0299FF4D300A75DFE /* TweetTableViewCell.swift */; };
 		C895C4FE29A5BF7A00A75DFE /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C895C4FC29A5BF7A00A75DFE /* TimelineTableViewCell.swift */; };
 		C895C4FF29A5BF7A00A75DFE /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C895C4FD29A5BF7A00A75DFE /* TimelineTableViewCell.xib */; };
+		C8BE933629A9C9E40035FFA1 /* TweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BE933429A9C9E40035FFA1 /* TweetViewController.swift */; };
+		C8BE933729A9C9E40035FFA1 /* TweetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8BE933529A9C9E40035FFA1 /* TweetViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		C895C4B0299FF4D300A75DFE /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 		C895C4FC29A5BF7A00A75DFE /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
 		C895C4FD29A5BF7A00A75DFE /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
+		C8BE933429A9C9E40035FFA1 /* TweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewController.swift; sourceTree = "<group>"; };
+		C8BE933529A9C9E40035FFA1 /* TweetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				C895C4A8299FEB1600A75DFE /* Info.plist */,
 				C895C4FC29A5BF7A00A75DFE /* TimelineTableViewCell.swift */,
 				C895C4FD29A5BF7A00A75DFE /* TimelineTableViewCell.xib */,
+				C8BE933429A9C9E40035FFA1 /* TweetViewController.swift */,
+				C8BE933529A9C9E40035FFA1 /* TweetViewController.xib */,
 			);
 			path = MyTwitterApp;
 			sourceTree = "<group>";
@@ -137,6 +143,7 @@
 				C895C4FF29A5BF7A00A75DFE /* TimelineTableViewCell.xib in Resources */,
 				C895C4A7299FEB1600A75DFE /* LaunchScreen.storyboard in Resources */,
 				C895C4A4299FEB1600A75DFE /* Assets.xcassets in Resources */,
+				C8BE933729A9C9E40035FFA1 /* TweetViewController.xib in Resources */,
 				C895C4A2299FEB1200A75DFE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +157,7 @@
 			files = (
 				C895C49B299FEB1200A75DFE /* AppDelegate.swift in Sources */,
 				C895C49D299FEB1200A75DFE /* SceneDelegate.swift in Sources */,
+				C8BE933629A9C9E40035FFA1 /* TweetViewController.swift in Sources */,
 				C895C4FE29A5BF7A00A75DFE /* TimelineTableViewCell.swift in Sources */,
 				C895C4AF299FEB5800A75DFE /* TimelineViewController.swift in Sources */,
 				C895C4B1299FF4D300A75DFE /* TweetTableViewCell.swift in Sources */,

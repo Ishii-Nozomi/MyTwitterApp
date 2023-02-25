@@ -10,9 +10,19 @@ import UIKit
 
 class TimelineViewController: UIViewController {
     @IBOutlet weak var tableview: UITableView!
+   
+    @IBOutlet weak var TweetSetButton: UIButton!
+    
+    
+    @IBAction func tweetSetButton(_ sender: UIButton) {
+        transitionToTweetView()
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableview.register(TimelineTableViewCell.self, forCellReuseIdentifier: "cell")
+        configureButton()
     }
     
     override func didReceiveMemoryWarning() {
@@ -20,6 +30,16 @@ class TimelineViewController: UIViewController {
         
         tableview.dataSource = self
         tableview.delegate = self
+    }
+    
+    func configureButton() {
+        TweetSetButton.layer.cornerRadius = TweetSetButton.bounds.width / 2
+    }
+    
+    func transitionToTweetView() {
+        let storyboard = UIStoryboard(name: "TweetViewController", bundle: nil)
+        guard let tweetViewController = storyboard.instantiateInitialViewController() as? TweetViewController else { return }
+        present(tweetViewController,  animated: true)
     }
 }
 

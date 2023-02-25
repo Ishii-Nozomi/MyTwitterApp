@@ -34,26 +34,49 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="ITe-Io-F8S"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Z5-r5-6YQ">
+                                <rect key="frame" x="293" y="718" width="50" height="50"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="MdV-ia-zMc"/>
+                                    <constraint firstAttribute="height" constant="50" id="fjT-rw-wMI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tweetSetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IET-vh-ors"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8Z5-r5-6YQ" secondAttribute="bottom" constant="50" id="8Ir-Cy-kKB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gw3-JZ-n60" secondAttribute="bottom" id="FOQ-Qq-pJM"/>
                             <constraint firstItem="gw3-JZ-n60" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NO3-6n-gfz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gw3-JZ-n60" secondAttribute="trailing" id="hvG-iz-VQn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Z5-r5-6YQ" secondAttribute="trailing" constant="50" id="rNR-Le-Dee"/>
                             <constraint firstItem="gw3-JZ-n60" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="x6j-nv-Nsy"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="cqy-Lj-q3i"/>
                     <connections>
+                        <outlet property="TweetSetButton" destination="8Z5-r5-6YQ" id="v2h-Dm-lNP"/>
                         <outlet property="tableview" destination="gw3-JZ-n60" id="jNN-ht-BjC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
