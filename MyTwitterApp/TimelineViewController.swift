@@ -14,8 +14,9 @@ class TimelineViewController: UIViewController {
     @IBOutlet weak var TweetSetButton: UIButton!
     
     
-    @IBAction func tweetSetButton(_ sender: UIButton) {
-        transitionToTweetView()
+    @IBAction func tweetSetButton(_ sender: Any) {
+        let tweet: UIView = UINib(nibName: "TweetViewController", bundle: nil).instantiate(withOwner: self, options: nil).first as! UIView
+        self.view.addSubview(tweet)
     }
     
     
@@ -36,11 +37,7 @@ class TimelineViewController: UIViewController {
         TweetSetButton.layer.cornerRadius = TweetSetButton.bounds.width / 2
     }
     
-    func transitionToTweetView() {
-        let storyboard = UIStoryboard(name: "TweetViewController", bundle: nil)
-        guard let tweetViewController = storyboard.instantiateInitialViewController() as? TweetViewController else { return }
-        present(tweetViewController,  animated: true)
-    }
+    
 }
 
 extension TimelineViewController: UITableViewDataSource {
