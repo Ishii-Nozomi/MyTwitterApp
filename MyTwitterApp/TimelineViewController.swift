@@ -14,12 +14,6 @@ class TimelineViewController: UIViewController {
     @IBOutlet weak var TweetSetButton: UIButton!
     
     
-    @IBAction func tweetSetButton(_ sender: Any) {
-        let tweet: UIView = UINib(nibName: "TweetViewController", bundle: nil).instantiate(withOwner: self, options: nil).first as! UIView
-        self.view.addSubview(tweet)
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableview.register(TimelineTableViewCell.self, forCellReuseIdentifier: "cell")
@@ -32,6 +26,12 @@ class TimelineViewController: UIViewController {
         tableview.dataSource = self
         tableview.delegate = self
     }
+    
+    @IBAction func tweetSetButton(_ sender: Any) {
+        let tweetViewController = TweetViewController()
+        present(tweetViewController, animated: true)
+    }
+    
     
     func configureButton() {
         TweetSetButton.layer.cornerRadius = TweetSetButton.bounds.width / 2
