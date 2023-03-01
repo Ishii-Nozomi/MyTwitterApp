@@ -17,16 +17,36 @@ class TweetViewController: UIViewController {
     
     @IBOutlet weak var tweetText: UITextView!
     
+    let textView: TweetTextView = {
+        let textView = TweetTextView()
+        textView.placeHolderLabel.text = "いまどうしてる？"
+        textView.font = .systemFont(ofSize: 18)
+        return textView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        userNameText.placeholder = "ユーザー名"
+        view.addSubview(textView)
+        textView.frame = .init(x: 20, y: 150, width: view.frame.size.width, height: view.frame.size.height)
+        textView.delegate = self
 
-        // Do any additional setup after loading the view.
+       
     }
     // キャンセルボタン
     @IBAction func backButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
+}
+
+extension TweetViewController: UITextViewDelegate {
+    func textViewDidChange(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            self.textView.placeHolderLabel.alpha = 1
+        } else {
+            self.textView.placeHolderLabel.alpha = 0
+        }
+    }
 }
 

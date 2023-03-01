@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C80E4EF529AE526400772A2B /* TweetTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80E4EF429AE526400772A2B /* TweetTextView.swift */; };
 		C895C49B299FEB1200A75DFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C895C49A299FEB1200A75DFE /* AppDelegate.swift */; };
 		C895C49D299FEB1200A75DFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C895C49C299FEB1200A75DFE /* SceneDelegate.swift */; };
 		C895C4A2299FEB1200A75DFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C895C4A0299FEB1200A75DFE /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C80E4EF429AE526400772A2B /* TweetTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTextView.swift; sourceTree = "<group>"; };
 		C895C497299FEB1200A75DFE /* MyTwitterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTwitterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C895C49A299FEB1200A75DFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C895C49C299FEB1200A75DFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				C895C4FD29A5BF7A00A75DFE /* TimelineTableViewCell.xib */,
 				C8BE933429A9C9E40035FFA1 /* TweetViewController.swift */,
 				C8BE933529A9C9E40035FFA1 /* TweetViewController.xib */,
+				C80E4EF429AE526400772A2B /* TweetTextView.swift */,
 			);
 			path = MyTwitterApp;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				C895C49B299FEB1200A75DFE /* AppDelegate.swift in Sources */,
 				C895C49D299FEB1200A75DFE /* SceneDelegate.swift in Sources */,
 				C8BE933629A9C9E40035FFA1 /* TweetViewController.swift in Sources */,
+				C80E4EF529AE526400772A2B /* TweetTextView.swift in Sources */,
 				C895C4FE29A5BF7A00A75DFE /* TimelineTableViewCell.swift in Sources */,
 				C895C4AF299FEB5800A75DFE /* TimelineViewController.swift in Sources */,
 				C895C4B1299FF4D300A75DFE /* TweetTableViewCell.swift in Sources */,
