@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TweetViewController" customModule="MyTwitterApp" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="6Ua-uX-LsW" id="hye-fZ-BoR"/>
+                <outlet property="tweetButton" destination="piG-94-vS0" id="zFh-bz-wFn"/>
+                <outlet property="tweetText" destination="sS0-zI-D1W" id="EGY-9O-wHL"/>
+                <outlet property="userNameText" destination="Rj4-2V-k8A" id="HFF-Cy-asU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ua-uX-LsW">
+                    <rect key="frame" x="20" y="50" width="102" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="キャンセル"/>
+                    <connections>
+                        <action selector="backButton:" destination="-1" eventType="touchUpInside" id="rQi-w5-Nid"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piG-94-vS0">
+                    <rect key="frame" x="279" y="50" width="94" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="ツイート"/>
+                    <connections>
+                        <action selector="tweetButton:" destination="-1" eventType="touchUpInside" id="8Vz-ya-xUo"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rj4-2V-k8A">
+                    <rect key="frame" x="20" y="116" width="353" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" keyboardType="twitter"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sS0-zI-D1W" customClass="TweetTextView" customModule="MyTwitterApp" customModuleProvider="target">
+                    <rect key="frame" x="20" y="180" width="353" height="128"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="twitter"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="piG-94-vS0" secondAttribute="trailing" constant="20" id="AhO-8o-Vel"/>
+                <constraint firstItem="6Ua-uX-LsW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="CRO-vO-KTH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sS0-zI-D1W" secondAttribute="bottom" constant="510" id="Mlw-i1-Hhb"/>
+                <constraint firstItem="piG-94-vS0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="WT8-z4-XcS"/>
+                <constraint firstItem="Rj4-2V-k8A" firstAttribute="top" secondItem="6Ua-uX-LsW" secondAttribute="bottom" constant="30" id="gOh-wC-WNE"/>
+                <constraint firstItem="sS0-zI-D1W" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="kDi-8C-vst"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rj4-2V-k8A" secondAttribute="trailing" constant="20" id="qyl-AJ-waf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sS0-zI-D1W" secondAttribute="trailing" constant="20" id="rKc-fW-IQo"/>
+                <constraint firstItem="6Ua-uX-LsW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="v1N-Qa-CCu"/>
+                <constraint firstItem="Rj4-2V-k8A" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="xYs-Uh-SiK"/>
+                <constraint firstItem="sS0-zI-D1W" firstAttribute="top" secondItem="Rj4-2V-k8A" secondAttribute="bottom" constant="30" id="zFk-Ac-59N"/>
+            </constraints>
+            <point key="canvasLocation" x="46.564885496183201" y="20.422535211267608"/>
+        </view>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="r9M-56-t6I">
+            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="-511" y="-37"/>
+        </label>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
