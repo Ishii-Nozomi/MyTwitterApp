@@ -1,4 +1,4 @@
 #CocoaPod
 Pods/*
-Podfile/
-Podfile.lock/
+/Podfile
+/Podfile.lock

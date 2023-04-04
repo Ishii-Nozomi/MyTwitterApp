@@ -15,6 +15,7 @@ class TweetTextView: UITextView {
         label.textColor = .lightGray
         label.font = .systemFont(ofSize: 18)
         label.numberOfLines = 0
+        label.frame = CGRect(x: 5, y: 8, width: 200, height: 24)
         return label
     }()
     
